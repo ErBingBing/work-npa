@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>myrelease.html</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script type="text/javascript" src="js/mymain.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <style type="text/css">
+     body{margin-top:60px;}
+    </style>
+  </head>
+  <body>
+   <!--public-header start -->
+  
+<div class="header-nav">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container header-con">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav nav-lt">
+         <li class="li-fir"><a href="index.html">首页</a></li>
+       <li class="li-sec"><a href="Sezaiquan.html">债权大厅</a></li>
+         <li class="dropdown li-thr">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuDivider">
+            <li><a href="#">风控系统</a></li>
+            <li role="presentation" class="divider"></li>
+            <li ><a href="#">数据修复</a></li>
+            <li role="presentation" class="divider"></li>
+            <li><a href="#">资产评估</a></li>
+          </ul>
+        </li>
+        <ul class="nav navbar-nav visible-sm visible-md" id="mid-style">
+       <!-- <li class="fri-child" style="width:100px;text-align:center;padding:0px;margin:0px;margin-top:16px;margin-left:38px;"><a href="zcweihu.html" style="background-color:#ec1b20;border-radius:2px;color:#fff;padding:0px;margin:0px;">发布资产</a></li> -->
+       <li><a href="load.html"><img src="images/load.png" alt="">登录</a></li>
+        <li><a href="register.html"><img src="images/register.png" alt="">注册</a></li> 
+      </ul>
+      </ul>    
+      <ul class="nav navbar-nav navbar-right">
+       <!-- <li><a href="zcweihu.html">发布资产</a></li> -->
+       <li><a href="load.html"><img src="images/load.png" alt="">登录</a></li>
+        <li><a href="register.html"><img src="images/register.png" alt="">注册</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+   <!--public-header end -->
+      <div class="register-contents">
+      <div class="container">
+        <div class="reg-bg cont">
+          <div class="success">
+           <p><a href="">恭喜您即将成为康得金控认证用户,我们的客服将尽快核实您的信息</a></p>
+            <p><a href=""><span id="time">5</span>S后返回首页</a></p>
+         </div>
+           <div class="icon-success">
+         
+            <div class="row icon-text">
+              <div class="col-xs-6 col-md-2"></div>
+            <div class="col-xs-6 col-md-2"><img src="images/reg-success(bulzc).png" alt=""><p>发布不良资产</p></div>
+            <div class="col-xs-6 col-md-2"><img src="images/reg-success(zicxx).png" alt=""><p>及时获取资产信息</p></div>
+            <div class="col-xs-6 col-md-2"><img src="images/reg-success(jiechu).png" alt=""><p>与业内专家零距离接触</p></div>
+            <div class="col-xs-6 col-md-2"><img src="images/reg-success(fuwu).png" alt=""><p>一对一评估处置服务</p></div>
+
+          </div>
+
+        </div>
+         </div>
+       
+        </div>
+      </div>
+
+
+<script type="text/javascript">
+ var t = 5; 
+      function countDown(){ 
+       var time = document.getElementById("time").innerHTML; 
+      t--; 
+      document.getElementById("time").innerHTML=t; 
+      if (t<=0) { 
+        location.href="index.html"; 
+        clearInterval(inter); 
+        }; 
+
+      } 
+      var inter = setInterval("countDown()",1000); 
+</script>
+<!--footer-->
+<div class="footer">
+  <div class="footer-content container">
+    <div class="row">
+     <div class="col-sm-3 col-md-3 ft-left">
+        <div class="row">
+        <div class="col-sm-1 col-md-1"></div>
+          <div class="col-sm-4 col-md-4">
+            <ul>
+            <li>寻找</li>
+            <!-- <li>资产</li> -->
+            <li>债权</li>
+            <!-- <li>股权</li> -->
+            </ul>
+          </div>
+          <div class="col-sm-5 col-md-5 last-col">
+           <ul>
+            <li>服务</li>
+            <li>风控系统</li>
+            <li>数据修复</li>
+            <li>资产评估</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-6 col-md-6 foot-img">
+        <p>处置机构</p>
+        <div class="row">
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="images/footer02.png" alt="">
+        </div>
+          <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="images/footer01.png" alt="">
+        </div>
+        <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="images/footer02.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="images/footer02.png" alt="">
+        </div>
+          <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="images/footer01.png" alt="">
+        </div>
+        <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="images/footer02.png" alt="">
+        </div>       
+      </div>
+    </div>
+      <div class="col-md-3 foots">
+      <div class="row">
+      <div class="col-sm-2 col-md-2"></div>
+      <div class="col-sm-10 col-md-10 fot9">
+        <p>客户服务</p>
+        <p>电话：400-123-4567</p>
+         <p>邮箱：kangdeasstes@126.com</p>
+          <p>QQ：783663368</p>
+      </div>
+      </div>
+      </div>
+</div>
+
+ 
+  </div>
+  
+</div>
+ <div class="footer-bar">copyright&copy;康得金控|京ICP备12345678号</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

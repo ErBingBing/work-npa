@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Id-rz.html</title>
+
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/layout.css">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <script type="text/javascript" src="/static/js/mymain.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <style type="text/css">
+     body{margin-top:60px;}
+    </style>
+  </head>
+  <body>
+   <!--public-header start -->
+  
+<div class="header-nav">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container header-con">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="index.html"><img src="/static/images/logo.png" alt=""></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav nav-lt">
+         <li class="li-fir"><a href="index.html">首页</a></li>
+       <li class="li-sec"><a href="Sezaiquan.html">债权大厅</a></li>
+         <li class="dropdown li-thr">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuDivider">
+            <li><a href="fksystem.html">风控系统</a></li>
+            <li role="presentation" class="divider"></li>
+            <li ><a href="#">数据修复</a></li>
+            <li role="presentation" class="divider"></li>
+            <li><a href="#">资产评估</a></li>
+          </ul>
+        </li>
+        <ul class="nav navbar-nav visible-sm visible-md" id="mid-style">
+       <!-- <li class="fri-child" style="width:100px;text-align:center;padding:0px;margin:0px;margin-top:16px;margin-left:38px;"><a href="zcweihu.html" style="background-color:#ec1b20;border-radius:2px;color:#fff;padding:0px;margin:0px;">发布资产</a></li> -->
+       <li><a href="load.html"><img src="/static/images/load.png" alt="">登录</a></li>
+        <li><a href="register.html"><img src="/static/images/register.png" alt="">注册</a></li>
+      </ul>
+      </ul>    
+      <ul class="nav navbar-nav navbar-right">
+       <!-- <li><a href="zcweihu.html">发布资产</a></li> -->
+       <li><a href="load.html"><img src="/static/images/load.png" alt="">登录</a></li>
+        <li><a href="register.html"><img src="/static/images/register.png" alt="">注册</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+   <!--public-header end -->
+
+
+
+      <div class="register-contents">
+      <div class="container">
+        <div class="Id-bg cont">
+
+          <div class="Id-success">
+           <p><a href="">1分钟成为康得金控认证用户,享受众多特权与服务</a></p>
+         </div>
+           <div class="row Id-text">
+            <div class="col-xs-6 col-md-2 col-lg-offset-4"><img src="/static/images/id-light.png" alt=""><p>债权方</p></div>
+            <div class="col-xs-6 col-md-2"><img src="/static/images/id-dark.png" alt=""><p>收购方</p></div>
+          <!--   <div class="col-xs-6 col-md-2"><img src="images/id-dark.png" alt=""><p>处置机构</p></div> -->
+          </div>
+         </div>
+
+         <div class="Id-info">
+           <div class="Id-Title">主体信息登记</div>
+            <hr style="margin-bottom:30px;">
+         <div class="row">
+         <div class="col-xs-6 col-md-7 col-lg-offset-2">
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <div for="inputEmail3" class="col-sm-3 control-label con-div cd"><span>*</span>企业名称</div>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="企业名称">
+                <p>需与当地政府颁发的商业许可证书或企业注册证上的企业名称完全一致，信息审核成功后，企业名称不可修改。</p>
+              </div>
+            </div>
+            <div class="form-group">
+              <div for="inputPassword3" class="col-sm-3 control-label con-div cd"><span>*</span>营业执照注册号</div>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="营业执照注册号">
+                 <p>请输入15位营业执照注册号或18位的统一社会信用代码</p>
+              </div>
+            </div>
+
+         
+         <div class="form-group" style="padding-bottom:30px;">
+              <div for="inputPassword3" class="col-sm-3 control-label con-div"><span>*</span>机构类型</div>
+              <div class="col-sm-9">
+               <!--  <input type="password" class="form-control" id="inputPassword3" placeholder="律所"> -->
+
+             <select name="select" id="select_k1" class="form-control">
+                    <option value="选择品牌">催收公司</option>
+                     <option value="选择品牌1">律所</option>
+                      <option value="选择品牌2">拍卖行</option>
+                      <option value="选择品牌2">典当行</option>
+                    </select>
+              </div>
+            </div>     
+
+
+            <div class="form-group" style="padding-bottom:30px;">
+              <div for="inputPassword3" class="col-sm-3 control-label con-div"><span>*</span>开户银行</div>
+              <div class="col-sm-9">
+               <!--  <input type="password" class="form-control" id="inputPassword3" placeholder="律所"> -->
+
+             <select name="select" id="select_k1" class="form-control">
+                    <option value="选择品牌">开户银行</option>
+                     <option value="选择品牌1">招商银行</option>
+                      <option value="选择品牌2">农业银行</option>
+                    </select>
+        
+
+                 <p>需与当地政府颁发的开户许可证上的开户银行完全一致</p>
+              </div>
+            </div>     
+
+           
+
+            <div class="form-group" style="padding-bottom:30px;">
+              <div for="inputPassword3" class="col-sm-3 control-label con-div"><span>*</span>账号</div>
+              <div class="col-sm-9">
+               <!--  <input type="password" class="form-control" id="inputPassword3" placeholder="律所"> -->
+
+             <select name="select" id="select_k1" class="form-control">
+                    <option value="选择品牌">账号</option>
+                     <option value="选择品牌1">身份账号</option>
+                      <option value="选择品牌2">债权账号</option>
+                    </select>
+        
+
+                 <p>需与当地政府颁发的开户许可证上的账号完全一致</p>
+              </div>
+            </div>     
+
+
+             <div class="form-group" style="padding-bottom:50px;">
+              <div for="inputPassword3" class="col-sm-3 control-label con-div"><span>*</span>开户银行所在城市</div>
+              <div class="col-sm-9">
+               <!--  <input type="password" class="form-control" id="inputPassword3" placeholder="律所"> -->
+
+             <select name="select" id="select_k1" class="form-control">
+                    <option value="选择品牌">更换城市</option>
+                     <option value="选择品牌1">北京市</option>
+                      <option value="选择品牌2">上海市</option>
+                    </select>
+     
+              </div>
+            </div>   
+
+
+
+            <div class="form-group" style="margin-bottom:0px;">
+              <div for="inputPassword3" class="col-sm-3 control-label con-div cd"><span>*</span>法人代表姓名</div>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="法人代表姓名">
+              </div>
+            </div>  
+
+            <div class="form-group">
+              <div for="inputPassword3" class="col-sm-3 control-label con-div cd"><span>*</span>身份证号</div>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="身份证号">
+              </div>
+            </div> 
+
+             <div class="form-group">
+              <div for="inputPassword3" class="col-sm-3 control-label con-div cd"><span>*</span>公司地址</div>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="公司地址">
+              </div>
+            </div> 
+
+          </form>
+
+         </div>
+       </div>
+             <div class="Id-Title">运营信息登记</div> 
+           <hr style="margin-bottom:30px;">
+
+        <div class="row">
+         <div class="col-xs-6 col-md-7 col-lg-offset-2">
+           <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <div for="inputEmail3" class="col-sm-3 control-label con-div xd"><span>*</span>姓名</div>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="姓名">
+              </div>
+            </div>
+            <div class="form-group">
+              <div for="inputPassword3" class="col-sm-3 control-label con-div xd"><span>*</span>身份证</div>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="身份证">
+              </div>
+            </div>
+            <div class="form-group">
+              <div for="inputPassword3" class="col-sm-3 control-label con-div">职位</div>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="职位">
+              </div>
+            </div>   
+            <div class="form-group" style="margin-top:30px;">
+              <div for="inputPassword3" class="col-sm-3 control-label con-div"><span>*</span>附件上传</div>
+              <div class="col-sm-9">
+               <!--  <input type="password" class="form-control" id="inputPassword3" placeholder="职位"> -->
+
+               <div class="row fileImg" >
+                <div class="col-xs-6 col-md-6 delPad" onclick="fileSelect(1);">
+                  <!-- <a href="#" class="thumbnail"> -->
+                    <img src="/static/images/id_rzFile.jpg" alt="..." style="width:203px;height:147px;border:1px solid #ccc;" id="image1" >
+                    <p>营业执照上传</p>
+                      <input type="file" name="fileToUpload1" accept="/static/image/jpg,image/png" id="fileToUpload1" style="display:none;">
+                  <!-- </a> -->
+                </div>
+               <div class="col-xs-6 col-md-6 delPad" onclick="fileSelect(2);">
+                    <img src="/static/images/id_rzFile.jpg" alt="..." style="width:203px;height:147px;border:1px solid #ccc;" id="image2" >
+                    <p>开户许可证上传</p>
+
+                     <input type="file" name="fileToUpload2" accept="/static/image/jpg,/static/image/png" id="fileToUpload2" style="display:none;">
+                </div>
+                     
+              </div>
+
+             <div class="row fileImg">
+                <div class="col-xs-6 col-md-6 delPad" onclick="fileSelect(3);">
+
+                    <img src="/static/images/id_rzFile.jpg" alt="..." style="width:203px;height:147px;border:1px solid #ccc;" id="image3" >
+                    <p>法人代表身份证正面上传</p> 
+             
+                  <input type="file" name="fileToUpload3" accept="/static/image/jpg,image/png" id="fileToUpload3" style="display:none;">
+
+                </div>
+               <div class="col-xs-6 col-md-6 delPad" onclick="fileSelect(4);">
+                    <img src="/static/images/id_rzFile.jpg" alt="..." style="width:203px;height:147px;border:1px solid #ccc;" id="image4" >
+                    <p>法人代表身份证背面上传</p>
+             
+                  <input type="file" name="fileToUpload4" accept="/static/image/jpg,image/png" id="fileToUpload4" style="display:none;">
+
+                </div>
+              </div>
+              <div class="row fileImg">
+                <div class="col-xs-6 col-md-6 delPad" onclick="fileSelect(5);">
+
+                    <img src="/static/images/id_rzFile.jpg" alt="..." style="width:203px;height:147px;border:1px solid #ccc;" id="image5" >
+                    <p>企业logo上传</p> 
+             
+                  <input type="file" name="fileToUpload5" accept="/static/image/jpg,image/png" id="fileToUpload5" style="display:none;">
+
+                </div>
+               
+              </div>
+
+
+
+
+              </div>
+            </div>       
+          </form>
+        </div>
+
+  <script type="text/javascript">
+      // 图片文件上传
+    function fileSelect(num) {
+    document.getElementById('fileToUpload'+num).click(); 
+    document.getElementById('fileToUpload'+num).onchange = function() {
+    var imgFile = this.files[0];
+    // alert(imgFile);
+    var fr = new FileReader();
+    fr.onload = function() {
+        document.getElementById('image'+num).src = fr.result;
+    };
+    fr.readAsDataURL(imgFile);
+   };
+
+       };
+  </script>
+
+
+
+          <div class="col-xs-6 col-md-6 col-lg-offset-5">
+
+       <a href="success.html"><button type="button" class="btn btn-primary">去认证</button></a>
+       <a href="success.html"><button type="button" class="btn btn-primary">取消</button></a>
+
+     </div>
+       </div>
+       
+        </div>
+      </div>
+    </div>s
+
+
+
+      
+
+
+    
+
+<!--footer-->
+<div class="footer">
+  <div class="footer-content container">
+    <div class="row">
+     <div class="col-sm-3 col-md-3 ft-left">
+        <div class="row">
+        <div class="col-sm-1 col-md-1"></div>
+          <div class="col-sm-4 col-md-4">
+            <ul>
+            <li>寻找</li>
+            <!-- <li>资产</li> -->
+            <li>债权</li>
+            <!-- <li>股权</li> -->
+            </ul>
+          </div>
+          <div class="col-sm-5 col-md-5 last-col">
+           <ul>
+            <li>服务</li>
+            <li>风控系统</li>
+            <li>数据修复</li>
+            <li>资产评估</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-6 col-md-6 foot-img">
+        <p>处置机构</p>
+        <div class="row">
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+          <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+        <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+          <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+        <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>       
+      </div>
+    </div>
+      <div class="col-md-3 foots">
+      <div class="row">
+      <div class="col-sm-2 col-md-2"></div>
+      <div class="col-sm-10 col-md-10 fot9">
+        <p>客户服务</p>
+        <p>电话：400-123-4567</p>
+         <p>邮箱：kangdeasstes@126.com</p>
+          <p>QQ：783663368</p>
+      </div>
+      </div>
+      </div>
+</div>
+
+ 
+  </div>
+  
+</div>
+ <div class="footer-bar">copyright&copy;康得金控|京ICP备12345678号</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/static/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/static/js/bootstrap.min.js"></script>
+  </body>
+</html>

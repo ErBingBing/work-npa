@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index.html</title>
+
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/layout.css">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <script type="text/javascript" src="/static/js/mymain.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    
+
+    <style type="text/css">
+
+     @media screen and (max-width: 1100px) {
+     /* .container {
+        width: 970px;
+      }*/
+      .tab-content .asstes-list b{font-size:18px;margin-bottom:10px;}
+      .tab-content .asstes-list b:hover{color:#5fdbd5;}
+      .tab-content .asstes-list .mid-col span{font-size:14px;margin-right:20px;display:inline;}
+      .tab-content .asstes-list .mid-col p{font-size:12px;}
+      .tab-content .asstes-list .mid-col p{font-size:12px;}
+      .tab-content .asstes-list .col-right span{font-size:14px;color:#333;}
+      .tab-content .asstes-list .col-right span b{color:#333;font-weight:bold;font-size:16px;}
+      .text-message .message-img .text-tx p:nth-child(1){font-size:1.8em;color:#5fdbd5;}
+      .text-message .message-img .text-tx p:nth-child(2){font-size:1.4em;color:#fff;}
+      .tab-content .asstes-list b{font-size:12px;margin-bottom:10px;}
+      .tab-content .asstes-list .mid-col input{width:60%;margin-top:14px;padding:0px;height:24px;font-size:14px;color:#333;text-align:center;}
+     .tab-content .asstes-list .mid-col button{border:none;background:none;border:1px solid #ccc;padding:0px;padding-left:20px;padding-right:20px;display:inline;margin:10px 10px 10px 0px;}
+.tab-content .asstes-list .mid-col p{font-size:14px;}
+.tab-content .asstes-list .col-right span{font-size:14px;color:#333;}
+.tab-content .asstes-list .col-right span b{color:#333;font-weight:bold;font-size:26px;}
+/*.navbar-right{
+        display:none;
+      }*/
+   }
+    @media screen and (max-width: 992px) {
+
+.tab-content .asstes-list .mid-col .inner-row{font-size:12px;color:#222;margin-top:12px;font-size:8px;}
+ .tab-content .asstes-list .mid-col .intr{margin:4px 0 4px 0px;font-size:14px;color:#999;}
+ .tab-content .asstes-list .mid-col b{font-size:16px;}
+ /*#mid-style{margin-left:140px;}*/
+ /*#mid-style li:nth-child(2){padding-left:80px;}*/
+.tab-content .asstes-list .mid-col .inner-row{padding-left:15px;}
+.tab-content .asstes-list .mid-col .inner-row div{padding:0px;margin:0px;}
+.tab-content .asstes-list .mid-col .inner-row img{padding:0;padding:0 2px 0 0;}
+.tab-content .asstes-list .mid-col .intr{font-size:10px;}
+.tab-content .asstes-list .mid-col b{margin-top:-12px;font-size:16px;}
+.tab-content .asstes-list .mid-col .inner-row{font-size:8px;color:#222;margin-top:4px;}
+.tab-content .asstes-list b{font-size:12px;margin-bottom:10px;}
+.tab-content .asstes-list .mid-col span b{font-size:18px;}
+
+.tab-content .asstes-list .mid-col .inner-row{font-size:8px;color:#222;margin-top:4px;}
+.tab-content .asstes-list .mid-col button{color:#849aaa;border:none;background-color:#f4f7f9;border:1px solid #f4f7f9;padding:0px;padding:4px 6px 4px 10px;display:inline;margin:0 2px 0 0;font-size:6px;}
+
+
+#profile .asstes-list .mid-col .intr{margin-top:20px;}
+#profile .asstes-list .mid-col .inner-row{margin-top:20px;}
+#profile .asstes-list .mid-col button{margin-top:20px;}
+#profile .asstes-list .mid-col span b{margin:0px;}
+
+
+/*.tab-content .asstes-list .mid-col input{width:100%;margin-top:8px;padding:0px;height:20px;font-size:12px;color:#333;text-align:center;}*/
+
+.text-message .message-img .text-tx p:nth-child(1){font-size:1em;color:#ec1b20;padding-right:8px;padding-top:-4px;}
+ .text-message .message-img .text-tx p:nth-child(2){font-size:0.7em;color:#fff;padding-right:4px;}
+.asstes .nav-tabs li a{font-size:18px;color:#333;font-weight:bold;}
+.asstes .nav-tabs{padding-top:40px;}
+
+
+ .tab-content .asstes-list b{font-size:16px;margin-bottom:10px;}
+ .tab-content .asstes-list b:hover{color:#ec1b20;}
+ .tab-content .asstes-list .mid-col span{font-size:14px;margin-right:20px;display:inline;}
+ .tab-content .asstes-list .mid-col .intr{font-size:10px;}
+ .tab-content .asstes-list .mid-col p{font-size:12px;}
+ .tab-content .asstes-list .col-right span{font-size:16px;color:#333;}
+ .tab-content .asstes-list .col-right span b{color:#333;font-weight:bold;font-size:16px;}
+ /*.text-message .message-img .text-tx p:nth-child(1){font-size:1.8em;color:#ec1b20;}
+ .text-message .message-img .text-tx p:nth-child(2){font-size:1.4em;color:#fff;}*/
+.tab-content .asstes-list b{font-size:16px;margin-bottom:10px;}
+ .tab-content .asstes-list .mid-col span{font-size:14px;margin-right:40px;display:inline;}
+/*.tab-content .asstes-list .mid-col input{width:60%;margin-top:14px;padding:0px;height:24px;font-size:14px;color:#333;text-align:center;}*/
+/*.tab-content .asstes-list .mid-col button{border:none;background:none;border:1px solid #ccc;padding:0px;padding-left:20px;padding-right:20px;display:inline;margin:10px 10px 10px 0px;}*/
+.tab-content .asstes-list .mid-col{padding-left:2px;padding-right:2px;}
+.tab-content .asstes-list .mid-col p{font-size:12px;}
+/*.tab-content .asstes-list .col-right{padding-left:2px;padding-right:2px;}
+.tab-content .asstes-list .col-right span{font-size:12px;color:#333;}
+.tab-content .asstes-list .col-right span b{color:#333;font-weight:bold;font-size:16px;}*/
+.navbar-right{
+        display:none;
+      }
+
+     }
+
+
+
+    @media screen and (min-width: 992px) and (max-width: 1200px){
+ .tab-content .asstes-list .mid-col .inner-row{font-size:14px;color:#222;margin-top:12px;}
+ .tab-content .asstes-list .mid-col .intr{margin:16px 0 16px 0px;font-size:14px;color:#999;}
+ #mid-style{margin-left:140px;}
+ #mid-style li:nth-child(2){padding-left:80px;}
+.text-message .message-img .text-tx p:nth-child(1){font-size:1.6em;color:#ec1b20;}
+ .text-message .message-img .text-tx p:nth-child(2){font-size:1.2em;color:#fff;}
+.asstes .nav-tabs li a{font-size:18px;color:#333;font-weight:bold;}
+.asstes .nav-tabs{padding-top:40px;}
+
+
+.tab-content .asstes-list b{font-size:16px;margin-bottom:10px;}
+.tab-content .asstes-list .mid-col input{width:60%;margin-top:14px;padding:0px;height:24px;font-size:14px;color:#333;text-align:center;}
+.tab-content .asstes-list .mid-col button{color:#849aaa;border:none;background-color:#f4f7f9;border:1px solid #f4f7f9;padding:0px;padding:4px 20px 4px 20px;display:inline;margin:0 6px 0 0;}
+.tab-content .asstes-list .mid-col p{font-size:12px;}
+.tab-content .asstes-list .col-right span{font-size:14px;color:#333;}
+.tab-content .asstes-list .col-right span b{color:#333;font-weight:bold;font-size:26px;}
+.navbar-right{
+        display:none;
+      }
+
+      }
+
+  @media screen and (max-width: 768px){
+
+ .tab-content .asstes-list .mid-col .inner-row{font-size:12px;color:#222;margin-top:12px;}
+ .tab-content .asstes-list .mid-col .intr{margin:4px 0 4px 0px;font-size:10px;color:#999;}
+ .tab-content .asstes-list .mid-col span b{font-size:18px;}
+ .tab-content .asstes-list .mid-col button{color:#849aaa;border:none;background-color:#f4f7f9;border:1px solid #f4f7f9;padding:0px;padding:4px 6px 4px 10px;display:inline;margin:0 6px 0 0;font-size:6px;}
+ .text-message .message-img .text-tx p:nth-child(1){font-size:1em;color:#ec1b20;padding-right:8px;margin-top:-4px;}
+ .text-message .message-img .text-tx p:nth-child(2){font-size:1em;color:#fff;padding-bottom:4px;padding-right:8px;}
+.asstes .nav-tabs li a{font-size:16px;color:#333;font-weight:bold;}
+.asstes .nav-tabs{padding-top:30px;}
+.tab-content .asstes-list .lists-img{padding-right:0px;}
+.tab-content .asstes-list .mid-col span{font-size:10px;margin-right:10px;display:inline;}
+.tab-content .asstes-list .mid-col .inner-row{padding-left:15px;}
+.tab-content .asstes-list .mid-col .inner-row div{padding:0px;margin:0px;}
+.tab-content .asstes-list .mid-col .inner-row img{padding:0;padding:0 2px 0 0;}
+.tab-content .asstes-list .mid-col .intr{font-size:10px;}
+.tab-content .asstes-list .mid-col b{margin-top:-12px;font-size:16px;}
+.tab-content .asstes-list .mid-col .inner-row{font-size:8px;color:#222;margin-top:4px;}
+.tab-content .asstes-list b{font-size:12px;margin-bottom:10px;}
+/*.tab-content .asstes-list .mid-col input{width:100%;margin-top:8px;padding:0px;height:20px;font-size:12px;color:#333;text-align:center;}*/
+/*.tab-content .asstes-list .mid-col p{font-size:12px;}
+.tab-content .asstes-list .col-right span{font-size:14px;color:#333;}
+.tab-content .asstes-list .col-right span b{color:#333;font-weight:bold;font-size:16px;}*/
+   .navbar-right{
+        display:none;
+      }
+
+.footer .foots{text-align:center;}
+    }
+.footer{padding-bottom:0px;padding-top:10px;}
+
+  }
+  
+
+/*body{padding-top:70px;font-family:"微软雅黑";}*/
+
+
+
+    </style>
+
+
+  </head>
+  <body>
+    
+
+<div class="header-nav" style="padding-top:70px;">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container header-con">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav nav-lt">
+         <li class="li-fir"><a href="index.html">首页</a></li>
+        <li class="li-sec"><a href="Sezaiquan.html">债权大厅</a></li>
+         <li class="dropdown li-thr">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuDivider">
+            <li><a href="fksystem.html">风控系统</a></li>
+            <li role="presentation" class="divider"></li>
+            <li ><a href="#">数据修复</a></li>
+            <li role="presentation" class="divider"></li>
+            <li><a href="#">资产评估</a></li>
+          </ul>
+        </li>
+        <ul class="nav navbar-nav visible-sm visible-md" id="mid-style">
+       <li class="fri-child" style="width:100px;text-align:center;padding:0px;margin:0px;margin-top:16px;margin-left:38px;"><a href="release.html" style="background-color:#ec1b20;border-radius:2px;color:#fff;padding:0px;margin:0px;">发布资产</a></li>
+       <li><a href="/login.html"><img src="/static/images/load.png" alt="">登录</a></li>
+        <li><a href="register.html"><img src="/static/images/register.png" alt="">注册</a></li>
+      </ul>
+      </ul>    
+      <ul class="nav navbar-nav navbar-right">
+       <li style="margin-right:136px;background-color:#ec1b20;border-radius:4px;width:122px;text-align:center;margin-top:18px;height:30px;"><a href="release.html" style="color:#fff;margin-top:-16px;">发布债权</a></li>
+       <li class="register"><a href="/login.html"><img src="/static/images/load.png" alt="">登录</a></li>
+          <li class="register"><a href="register.html"><img src="/static/images/register.png" alt="">注册</a></li>
+         <li class="logout" style="display: none;height:62px;line-height: 62px;background:darkorange;padding: 0 20px;"> <a href="javacript:;" class="logout">退出</a></li>
+{#         <a class="username" id="username" ><li  style="display: none;"></li></a>#}
+          <a class="username"  ><li  style="display: none;"></li></a>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+</div>
+
+      
+       <div class="banner container">
+        <div class="row">
+          <div class="col-sm-8 col-md-9 ban-img">
+        <!--banner 轮播开始-->
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="/static/images/banner.png" alt=" ">
+            </div>
+            <div class="item">
+              <img src="/static/images/banner.png" alt=" ">
+            </div>
+             <div class="item">
+              <img src="/static/images/banner.png" alt=" ">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+
+        </div>
+          <!--banner 轮播结束-->
+
+
+          <div class="text-message">
+            <!-- <div class="title">
+              <p>统计数据</p>
+            </div> -->
+            <div class="message-img">
+            <div class="row col-img">
+            <div class="col-xs-3 col-sm-3 col-md-3 coll">
+            <div class="text-tx text-center">
+                <p>23,668.69<span style="font-size:0.6em;color:#333;">元</span></p>
+              </div>
+              <img src="images/1.png" alt="...">
+
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 coll">
+            <div class="text-tx text-center">
+                <p>13,689.65<span style="font-size:0.6em;color:#333;">元</span></p>
+              </div>
+              <img src="images/2.png" alt="...">
+
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 coll">
+            <div class="text-tx text-center">
+                <p>1,696<span style="font-size:0.6em;color:#333;">家</span></p>
+              </div>
+              <img src="images/3.png" alt="...">
+
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 coll">
+            <div class="text-tx text-center">
+                <p>1,323<span style="font-size:0.6em;color:#333;">人</span></p>
+              </div>
+              <img src="/static/images/4.png" alt="...">
+
+            </div>
+              
+              </div>
+            </div>
+
+          </div>
+
+
+      <div class="asstes">
+       <!-- Nav tabs -->
+        <ul class="nav custom " role="tablist" id="customul">
+          <!-- <li role="presentation" class="curr"><a href="#home" role="tab" data-toggle="tab">资产推荐</a></li> -->
+          <li role="presentation" class="curr"><a href="#profile" role="tab" data-toggle="tab">债权推荐</a></li>
+          <!-- <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">股权推荐</a></li> -->
+          <div class="clear"></div>
+          
+        </ul>
+        <hr>
+
+        <script src="/static/js/jquery.min.js"></script>
+                <script type="text/javascript">
+        $(function(){
+            $("#customul li").click(function(){
+                $(this).addClass("curr").siblings().removeClass("curr");
+            });
+            // 登录后隐藏 ‘登录’‘注册’
+            $('.register').show()
+
+            var username = localStorage.getItem('username')
+            if(username !== null){
+                $('.register').hide()
+                $('.username').show().html(localStorage.getItem('username'))
+                $('.logout').show()
+            }
+           // 退出事件
+            $('.logout').on("click",function () {
+                localStorage.removeItem('username')
+                window.location.href='index.html'
+            })
+
+            $('.username').on("click",function () {
+{#                用户名跳转个人中心#}
+                window.location.href='myaccount.html?username='+localStorage.getItem('username')
+            })
+
+
+          });
+                </script>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="profile">
+            <div class="row asstes-list">
+                <div class="col-md-12 mid-col">
+                  <b><a href="Sezaiquan.html">闽行地标&nbsp;解放大厦3号甲级写字楼出售</a></b>              
+                 <div class="intr">简介：信用卡曾颠覆消费世界一样，移动支付也正开始接替信用卡，成为推动消费社会的关键因素。据麦肯锡近期的报告。与信用卡曾颠覆消费世界一样，移动支付也正开始接替信用卡，成为推动消费社会的关键因素。据麦肯锡近期的报告。</div>
+                 <div class="row inner-row">
+                  <div class="col-sm-3 col-md-3">北京市XXXXXXX处置机构</div>
+                  <!-- <div class="col-sm-4 col-md-3"><img src="images/navi.png" alt="">上海.闵行</div> -->
+                  <div class="col-sm-4 col-md-4 clock"><img src="/static/images/clock.png" alt="">2016-01-01</div>
+                </div>
+                   <button class="btn btn-defaul" type="button"> <a href="Sezaiquan.html">一手</a></button>
+                  <button class="btn btn-defaul" type="button"> 地理位置优越</button>
+                  <button class="btn btn-defaul" type="button"> 产权干净</button>
+                  <span>佣金率 <b>23</b> %</span>
+                </div>
+            </div>
+            <hr>
+             <div class="row asstes-list">
+                <div class="col-md-12 mid-col">
+                <b><a href="Sezaiquan.html">闽行地标&nbsp;解放大厦3号甲级写字楼出售</a></b>              
+                 <div class="intr">简介：信用卡曾颠覆消费世界一样，移动支付也正开始接替信用卡，成为推动消费社会的关键因素。据麦肯锡近期的报告。与信用卡曾颠覆消费世界一样，移动支付也正开始接替信用卡，成为推动消费社会的关键因素。据麦肯锡近期的报告。</div>
+                 <div class="row inner-row">
+                  <div class="col-sm-3 col-md-3">北京市XXXXXXX处置机构</div>
+                  <!-- <div class="col-sm-4 col-md-3"><img src="images/navi.png" alt="">上海.闵行</div> -->
+                  <div class="col-sm-4 col-md-4 clock"><img src="/static/images/clock.png" alt="">2016-01-01</div>
+                </div>
+                    <button class="btn btn-defaul" type="button"> <a href="Sezaiquan.html">一手</a></button>
+                  <button class="btn btn-defaul" type="button"> 地理位置优越</button>
+                  <button class="btn btn-defaul" type="button"> 产权干净</button>
+                 <span>佣金率 <b>16~23</b> %</span>
+                </div>
+            </div>
+            <hr>
+
+                <div class="row asstes-list">
+                <div class="col-md-12 mid-col">
+                  <b><a href="Sezaiquan.html">闽行地标&nbsp;解放大厦3号甲级写字楼出售</a></b>              
+                 <div class="intr">简介：信用卡曾颠覆消费世界一样，移动支付也正开始接替信用卡，成为推动消费社会的关键因素。据麦肯锡近期的报告。与信用卡曾颠覆消费世界一样，移动支付也正开始接替信用卡，成为推动消费社会的关键因素。据麦肯锡近期的报告。</div>
+                 <div class="row inner-row">
+                  <div class="col-sm-3 col-md-3">北京市XXXXXXX处置机构</div>
+                  <!-- <div class="col-sm-4 col-md-3"><img src="images/navi.png" alt="">上海.闵行</div> -->
+                  <div class="col-sm-4 col-md-4 clock" ><img src="/static/images/clock.png" alt="">2016-01-01</div>
+                </div>
+                   <button class="btn btn-defaul" type="button"> <a href="Sezaiquan.html">一手</a></button>
+                  <button class="btn btn-defaul" type="button"> 地理位置优越</button>
+                  <button class="btn btn-defaul" type="button"> 产权干净</button>
+                  <span>佣金率 <b>23</b> %</span>
+                </div>
+            </div>
+            <hr>
+
+             <div class="row asstes-list">
+                <div class="col-md-12 mid-col">
+                  <b><a href="Sezaiquan.html">闽行地标&nbsp;解放大厦3号甲级写字楼出售</a></b>              
+                 <div class="intr">简介：信用卡曾颠覆消费世界一样，移动支付也正开始接替信用卡，成为推动消费社会的关键因素。据麦肯锡近期的报告。与信用卡曾颠覆消费世界一样，移动支付也正开始接替信用卡，成为推动消费社会的关键因素。据麦肯锡近期的报告。</div>
+                 <div class="row inner-row">
+                  <div class="col-sm-3 col-md-3">北京市XXXXXXX处置机构</div>
+                  <!-- <div class="col-sm-4 col-md-3"><img src="images/navi.png" alt="">上海.闵行</div> -->
+                  <div class="col-sm-4 col-md-4 clock"><img src="/static/images/clock.png" alt="">2016-01-01</div>
+                </div>
+                   <button class="btn btn-defaul" type="button"> <a href="Sezaiquan.html">一手</a></button>
+                  <button class="btn btn-defaul" type="button"> 地理位置优越</button>
+                  <button class="btn btn-defaul" type="button"> 产权干净</button>
+                 <span>佣金率 <b>16~23</b> %</span>
+                </div>
+            </div>
+            <hr>
+
+               <div class="row asstes-list">
+                <div class="col-md-12 mid-col">
+                  <b><a href="Sezaiquan.html">闽行地标&nbsp;解放大厦3号甲级写字楼出售</a></b>              
+                 <div class="intr">简介：信用卡曾颠覆消费世界一样，移动支付也正开始接替信用卡，成为推动消费社会的关键因素。据麦肯锡近期的报告。与信用卡曾颠覆消费世界一样，移动支付也正开始接替信用卡，成为推动消费社会的关键因素。据麦肯锡近期的报告。</div>
+                 <div class="row inner-row">
+                 <div class="col-sm-3 col-md-3">北京市XXXXXXX处置机构</div>
+                  <!-- <div class="col-sm-4 col-md-3"><img src="images/navi.png" alt="">上海.闵行</div> -->
+                  <div class="col-sm-4 col-md-4 clock"><img src="/static/images/clock.png" alt="">2016-01-01</div>
+                </div>
+                  <button class="btn btn-defaul" type="button"> <a href="Sezaiquan.html">一手</a></button>
+                  <button class="btn btn-defaul" type="button"> 地理位置优越</button>
+                  <button class="btn btn-defaul" type="button"> 产权干净</button>
+                 <span>佣金率 <b>16~23</b> %</span>
+                </div>
+            </div>
+          </div>
+           <hr>
+          
+
+        </div>
+
+          <div class="more">
+           <button class="btn btn-defaul" type="button"> 加载更多</button>
+          </div>
+
+
+
+      </div>    
+
+          </div>
+
+
+
+        <div class="col-sm-4 col-md-3 col3">
+          <div class="news-title">
+             <img src="/static/images/bar-l.png" alt="">
+              <b>新闻资讯</b>
+              <span class="pull-right">更多...</span>
+               <hr>
+          </div>
+      
+          <div class="title-tap" style="padding-top:16px;" onclick="aa(1)">
+             <span><img src="images/down.png" alt="" id="img1"></span>
+              <span>汤加对中国游客免签于20日正式生效</span>            
+              <div class="t-border" id="div1" style="display:none;">在专车司机是雇员还是独立承包商这个问题上Uber似乎并不准备放弃与司机进一步的谈判。</div>
+              <p>1分钟之前</p>
+              <hr>
+           </div>
+            <div class="title-tap" onclick="aa(2)">
+             <span><img src="images/down.png" alt="" id="img2"></span>
+              <span>汤加对中国游客免签于20日正式生效</span>            
+              <div class="t-border" id="div2" style="display:none;">在专车司机是雇员还是独立承包商这个问题上Uber似乎并不准备放弃与司机进一步的谈判。</div>
+              <p>1分钟之前</p>
+              <hr>
+           </div>
+            <div class="title-tap" onclick="aa(3)">
+             <span ><img src="images/down.png" alt="" id="img3"></span>
+              <span>汤加对中国游客免签于20日正式生效</span>            
+              <div class="t-border" id="div3" style="display:none;">在专车司机是雇员还是独立承包商这个问题上Uber似乎并不准备放弃与司机进一步的谈判。</div>
+              <p>1分钟之前</p>
+              <hr>
+           </div>
+
+         
+           <div class="title-tap" onclick="aa(4)">
+             <span><img src="images/down.png" alt="" id="img4"></span>
+              <span>汤加对中国游客免签于20日正式生效</span>            
+              <div class="t-border" id="div4" style="display:none;">在专车司机是雇员还是独立承包商这个问题上Uber似乎并不准备放弃与司机进一步的谈判。</div>
+              <p>1分钟之前</p>
+              <hr>
+           </div>
+   <script type="text/javascript">
+        function aa(i){
+        var dd=document.getElementById('div'+i);
+        var img = document.getElementById('img'+i);
+      if(dd.style.display=="block"){
+        img.src="/static/images/down.png";
+        dd.style.display="none";
+      }else{dd.style.display="block";img.src="/static/images/up.png";}
+        }
+
+ </script> 
+
+
+          <div class="news-title" style="margin-top:24px;">
+             <img src="/static/images/bar-l.png" alt="">
+              <b>用户认证</b>
+               <hr>
+         
+          <div class="news-img">
+            <img src="/static/images/bar.png" alt="">
+          </div>
+
+          
+          <div class="text-img">
+            <p><img src="/static/images/fabu.png" alt=""><a href="Id-rz.html">xx发布不良资产</a></p>
+            <hr>
+            <p><img src="/static/images/zixun.png" alt=""><a href="Id-rz.html">及时获取资产信息</a></p>
+            <hr>
+            <p><img src="/static/images/zhuanj.png" alt=""><a href="Id-rz.html">于业内专家零距离接触</a></p>
+            <hr>
+            <p><img src="/static/images/chuzhi.png" alt=""><a href="Id-rz.html">一对一专业评估处置服务</a></p>
+            <hr>
+          </div>
+        </div>
+
+
+
+           <div class="news-title" style="margin-top:24px;">
+             <img src="images/bar-l.png" alt="">
+              <b>热点标签</b>
+               <hr>
+
+             <div class="tab-btn" style="margin-left:12px;">
+                <button class="btn btn-defaul" type="button"> 一手一手</button>
+                <button class="btn btn-defaul" type="button"> 转让转让</button>
+                <button class="btn btn-defaul" type="button"> 精品品</button>
+                <button class="btn btn-defaul" type="button"> 转让转让</button>
+                <button class="btn btn-defaul" type="button"> 精品</button>
+                <button class="btn btn-defaul" type="button"> 一手</button>
+                <button class="btn btn-defaul" type="button"> 精品精品品</button>
+                <button class="btn btn-defaul" type="button"> 一手</button>
+                <button class="btn btn-defaul" type="button"> 转让转让让</button>
+                <button class="btn btn-defaul" type="button"> 精品</button>
+                <button class="btn btn-defaul" type="button"> 一手</button>
+                <button class="btn btn-defaul" type="button"> 转让</button>
+
+               </div>
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+        </div>
+        </div>
+
+
+
+
+
+<!--footer-->
+<div class="footer">
+  <div class="footer-content container">
+    <div class="row">
+     <div class="col-sm-3 col-md-3 ft-left">
+        <div class="row">
+        <div class="col-sm-1 col-md-1"></div>
+          <div class="col-sm-4 col-md-4">
+            <ul>
+            <li>寻找</li>
+            <!-- <li>资产</li> -->
+            <li>债权</li>
+            <!-- <li>股权</li> -->
+            </ul>
+          </div>
+          <div class="col-sm-5 col-md-5 last-col">
+           <ul>
+            <li>服务</li>
+            <li>风控系统</li>
+            <li>数据修复</li>
+            <li>资产评估</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-6 col-md-6 foot-img">
+        <p>处置机构</p>
+        <div class="row">
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+          <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+        <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+          <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+        <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>       
+      </div>
+    </div>
+      <div class="col-md-3 foots">
+      <div class="row">
+      <div class="col-sm-2 col-md-2"></div>
+      <div class="col-sm-10 col-md-10 fot9">
+        <p>客户服务</p>
+        <p>电话：400-123-4567</p>
+         <p>邮箱：kangdeasstes@126.com</p>
+          <p>QQ：783663368</p>
+      </div>
+      </div>
+      </div>
+</div>
+
+ 
+  </div>
+  
+</div>
+ <div class="footer-bar">copyright&copy;康得金控|京ICP备12345678号</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

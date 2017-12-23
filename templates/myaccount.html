@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>myaccount.html</title>
+
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/layout.css">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <script type="text/javascript" src="/static/js/mymain.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+     body{margin-top:60px;}
+    </style>
+  </head>
+  <body>
+   <!--public-header start -->
+  
+<div class="header-nav">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container header-con">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="index.html"><img src="/static/images/logo.png" alt=""></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav nav-lt">
+         <li class="li-fir"><a href="index.html">首页</a></li>
+       <li class="li-sec"><a href="Sezaiquan.html">债权大厅</a></li>
+         <li class="dropdown li-thr">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuDivider">
+            <li><a href="fksystem.html">风控系统</a></li>
+            <li role="presentation" class="divider"></li>
+            <li ><a href="#">数据修复</a></li>
+            <li role="presentation" class="divider"></li>
+            <li><a href="#">资产评估</a></li>
+          </ul>
+        </li>
+        <ul class="nav navbar-nav visible-sm visible-md" id="mid-style">
+       <!-- <li class="fri-child" style="width:100px;text-align:center;padding:0px;margin:0px;margin-top:16px;margin-left:38px;"><a href="zcweihu.html" style="background-color:#ec1b20;border-radius:2px;color:#fff;padding:0px;margin:0px;">发布资产</a></li> -->
+       <li><a href="load.html"><img src="/static/images/load.png" alt="">登录</a></li>
+        <li><a href="register.html"><img src="/static/images/register.png" alt="">注册</a></li>
+      </ul>
+      </ul>    
+      <ul class="nav navbar-nav navbar-right">
+       <!-- <li><a href="zcweihu.html">发布资产</a></li> -->
+       <li><a href="load.html"><img src="/static/images/load.png" alt="">登录</a></li>
+        <li><a href="register.html"><img src="/static/images/register.png" alt="">注册</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+   <!--public-header end -->
+     <div class="register-contents">
+     <div class="container">
+        <div class="row pers-bg">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="Personal-Center">
+            
+            <ul>
+              <li><a href="myaccount.html"><img src="/static/images/person.png" alt=""></a></li>
+              <li><a href="mybuy.html"><img src="/static/images/buy.png" alt=""><span>我的购买</span></a></li>
+              <li><a href="mymeg.html"><img src="/static/images/mes.png" alt=""><span>我的消息</span></a></li>
+              <li><a href="blzchan.html"><img src="/static/images/star.png" alt=""><span>我的团队</span></a></li>
+              <hr>
+              <li><a href="index.html"><img src="/static/images/Exit.png" alt=""><span>退出登录</span></a></li>
+
+
+            </ul>
+
+          </div>
+
+          </div>
+        <div class="col-xs-12 col-sm-12 col-md-9">
+            <div class="assets-info">
+              <div class="row fr-renz">
+              <div class="col-md-4"></div>
+              <div class="col-md-8"><a href="id-rz.html"><button type="button" class="btn btn-primary">去认证</button></a>
+              <span>一分钟成为康得金控认证用户,享受众多特权与服务</span>
+              </div>
+              </div>
+              <div class="assets-cont">
+             <div class="row h-title">
+               <ul class="changes-info">
+                  <li class="ch-first"><a href="#">账户信息</a></li>
+                  <li><a href="sheqrz.html">社区账号授权</a></li>
+                  <div class="clear"></div>
+                </ul>
+              </div>
+  
+             <div class="sheqrz-cont">
+
+               <div class="h-photo navgt">
+              <div class="row"> 
+                <div class="col-md-8">
+              <img id="h-img" src="/static/images/person-sm.png" alt="">
+{#                    username#}
+                <span class="wb" id="username"></span>
+                </div>
+                 <div class="col-md-4">
+                      <div class="re-btn re-btn1" style="padding-top:20px;">
+                  <button type="button" class="btn btn-primary">修改</button></div>
+                  </div>
+                </div>
+                  <div class="row">
+                  <div class="col-md-8">
+                  <span class="wb2">用于识别用户身份</span>
+                  </div>
+                   
+                   <div class="col-md-4">
+                      <div class="re-btn">
+                  <!-- <button type="button" class="btn btn-primary">修改</button> -->
+                  </div>
+                  </div>
+                   </div>
+                  </div>
+                  <hr>
+
+
+
+
+                  <div class="h-photo">
+                  <div class="row">
+                  <div class="col-md-8">
+                    <h4>邮箱:&nbsp;&nbsp;<span id="email">暂无邮箱</span></h4>
+                  <p>邮箱可用于重置密码或其他安全认证</p>
+                  </div>
+                   
+                   <div class="col-md-4">
+                      <div class="re-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify_email">修改</button></div>
+                  </div>
+                   </div>
+                  </div>
+                  <hr>
+                 <div class="h-photo">
+                  <div class="row">
+                  <div class="col-md-8">
+                     <h4>手机号:&nbsp;&nbsp;<span id="number">138****6789</span></h4>
+                       <p>手机号可用于登录账户、重置密码或其他安全认证</p>
+                  </div>
+                   
+                   <div class="col-md-4">
+                      <div class="re-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify_phone">修改</button></div>
+                  </div>
+                   </div>
+                  </div>
+                   <hr>
+                  <div class="h-photo">
+                  <div class="row">
+                  <div class="col-md-8">
+                    <h4>账户密码:</h4><span id = 'password'></span>
+                  <p>用于保护账号信息和登录安全</p>
+                  </div>
+                   
+                   <div class="col-md-4">
+                      <div class="re-btn">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modify_account">修改</button></div>
+                  </div>
+                   </div>
+                  </div>
+                     <hr>
+                   <div class="h-photo">
+                  <div class="row">
+                  <div class="col-md-8">
+                   <h4>身份认证:&nbsp;&nbsp;<span id="atype">未认证</span></h4>
+                  <p>1分钟成为康得金控认证用户，享受众多特权于服务</p>
+                  </div>
+                   
+                   <div class="col-md-4">
+                      <div class="re-btn">
+                  <button type="button" class="btn btn-primary">修改</button></div>
+                  </div>
+                   </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!--模态框开始-->
+  
+<!--邮箱修改开始-->
+<div class="modal fade" id="modify_email" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">     
+            <div class="form-group" style="height:40px;">
+             <div class="text-center" style="padding-bottom:20px;"><h4>请在此处修改您的邮箱</h4></div>
+              <div for="resetName" class="col-sm-2 control-label" style="line-height:34px;text-align:center;padding-right:0px;">邮箱</div>
+              <div class="col-sm-10" style="padding-left:0px;">
+                <input type="email" class="form-control" id="email" placeholder="邮箱">
+              </div>
+            </div> 
+            </div>
+            <div class="modal-footer" style="margin-top:40px;" id="footerBox">
+              <button type="submit" class="btn btn-default" onclick="emailSave()" id="save1">保存
+              </button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">取消
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--邮箱修改结束-->
+
+<!--手机号修改开始-->
+<div class="modal fade" id="modify_phone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">     
+           
+            <div class="form-group" style="height:80px;">
+             <div class="text-center" style="padding-bottom:20px;"><h4>请在此处修改您的手机号</h4></div>
+            
+
+             <div for="resetName" class="col-sm-2 control-label" style="line-height:34px;text-align:center;padding-right:0px;">原手机号</div>
+              <div class="col-sm-10" style="padding-left:0px;">
+               <input type="number" class="form-control" id="phone1" placeholder="13523423489" disabled="disabled">
+              </div>
+           
+
+              <div for="resetName" class="col-sm-2 control-label" style="margin-top:20px;line-height:34px;text-align:center;padding-right:0px;">手机号</div>
+              <div class="col-sm-10" style="padding-left:0px;margin-top:20px;">
+                <input type="number" class="form-control" id="phone2" placeholder="手机号">
+              </div>
+            </div> 
+            </div>
+            <div class="modal-footer" style="margin-top:40px;">
+              <button type="button" class="btn btn-default" onclick="phoneSave()" id="save2">保存
+              </button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">取消
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--手机号修改结束-->
+<!--账户密码修改开始-->
+<div class="modal fade" id="modify_account" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">     
+           
+            <div class="form-group" style="height:140px;">
+             <div class="text-center" style="padding-bottom:20px;"><h4>请在此处修改您的账户密码</h4></div>
+
+              <div for="resetName" class="col-sm-2 control-label" style="line-height:34px;text-align:center;padding-right:0px;">原密码</div>
+              <div class="col-sm-10" style="padding-left:0px;">
+                <input type="password" class="form-control" id="account0" placeholder=" 请输入原密码 ">
+              </div>
+
+               <div for="resetName" class="col-sm-2 control-label" style="line-height:34px;margin-top:20px;text-align:center;padding-right:0px;">现密码</div>
+              <div class="col-sm-10" style="padding-left:0px;margin-top:20px;">
+                <input type="password" class="form-control" placeholder="现账户密码" id="onPassword">
+              </div>
+
+               <div for="resetName" class="col-sm-2 control-label" style="line-height:34px;margin-top:20px;text-align:center;padding-right:0px;">现确认密码</div>
+              <div class="col-sm-10" style="padding-left:0px;margin-top:20px;">
+                <input type="password" class="form-control" placeholder="现确认账户密码" id="againPassword">
+              </div>
+
+            </div> 
+            </div>
+            <div class="modal-footer" style="margin-top:40px;">
+              <button type="button" class="btn btn-default" onclick="accountSave()" id="save3">保存
+              </button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">取消
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--账户密码修改结束-->
+
+            <!--模态框结束-->
+
+<script src="js/jquery.min.js"></script>
+                <script type="text/javascript">
+        $(function(){
+            $(".changes-info li").click(function(){
+                $(this).addClass("ch-first").siblings().removeClass("ch-first");
+            });
+          });
+        
+        function emailSave(){
+          var oEmail = document.getElementById('email').value;
+          var footerBox = document.getElementById('footerBox');
+          var btn = footerBox.getElementsByTagName('button')[0];
+          var regex = /^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g;
+          if ( regex.test( oEmail ) )
+          {
+              $("#save1").attr("data-dismiss","modal");
+
+          }else{
+            
+             alert('您输入的邮箱有误请重新输入');
+           $("#save1").removeAttr("data-dismiss");
+          } 
+     
+        };
+        function phoneSave(){
+         var oPhone = document.getElementById('phone2').value;
+         var regex1 =  /^1[3|4|5|7|8][0-9]{9}$/;
+         if(regex1.test(oPhone)){ 
+                $("#save2").attr("data-dismiss","modal");
+            }else{
+               alert("不是完整的11位手机号或者正确的手机号前七位"); 
+                $("#save2").removeAttr("data-dismiss");   
+            } 
+
+        };
+        function accountSave(){
+          
+         var oAccount = document.getElementById('account0').value;
+         var onPassword = document.getElementById('onPassword').value;
+         var againPassword = document.getElementById('againPassword').value;
+         if(onPassword==againPassword){
+            $("#save3").attr("data-dismiss","modal"); 
+         }else{
+            alert('两次输入的密码不一样！请重新输入')
+            $("#save3").removeAttr("data-dismiss"); 
+         }
+
+        };
+
+
+        </script>
+
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/main.js"></script>
+<script type="text/javascript">
+        $(function(){
+            $(".changes-info li").click(function(){
+                $(this).addClass("ch-first").siblings().removeClass("ch-first");
+            });
+          });
+    //   个人中心 ajax请求  --lxb
+        $(document).ready(function() {
+{#            alert('123')#}
+            function loadData(){
+{#                alert('asdfads')#}
+                var username = getParamByName('username',window.location)
+                $.ajax({
+                    type: 'post',
+                    url: 'myaccount?username='+ username,
+                     data:{},
+                    success:function(response){
+                        $('#username').html(response.username)
+                        $('#email').html(response.email)
+                        $('#password').html(response.password)
+                        $('#atype').html(''+false+'')
+                        localStorage.setItem('id', response.id)
+    {#              if(response.code=='0'){#}
+    {#                  $('#infos').show();#}
+    {#                var megs = response.message;#}
+    {#                $('#infos').html(megs);#}
+    {#                  }else{#}
+    {#                      localStorage.setItem('username',response.message)#}
+    {#                      window.location.href='index.html?'+ response.message#}
+    {#                    }#}
+                    }
+                 })
+            }
+            loadData()
+        })
+
+            $("").click(function(){
+
+            });
+
+                </script>
+
+
+<!--footer-->
+<div class="footer">
+  <div class="footer-content container">
+    <div class="row">
+     <div class="col-sm-3 col-md-3 ft-left">
+        <div class="row">
+        <div class="col-sm-1 col-md-1"></div>
+          <div class="col-sm-4 col-md-4">
+            <ul>
+            <li>寻找</li>
+            <!-- <li>资产</li> -->
+            <li>债权</li>
+            <!-- <li>股权</li> -->
+            </ul>
+          </div>
+          <div class="col-sm-5 col-md-5 last-col">
+           <ul>
+            <li>服务</li>
+            <li>风控系统</li>
+            <li>数据修复</li>
+            <li>资产评估</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-6 col-md-6 foot-img">
+        <p>处置机构</p>
+        <div class="row">
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+          <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+        <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+          <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+        <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>       
+      </div>
+    </div>
+      <div class="col-md-3 foots">
+      <div class="row">
+      <div class="col-sm-2 col-md-2"></div>
+      <div class="col-sm-10 col-md-10 fot9">
+        <p>客户服务</p>
+        <p>电话：400-123-4567</p>
+         <p>邮箱：kangdeasstes@126.com</p>
+          <p>QQ：783663368</p>
+      </div>
+      </div>
+      </div>
+</div>
+
+ 
+  </div>
+  
+</div>
+ <div class="footer-bar">copyright&copy;康得金控|京ICP备12345678号</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/static/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/static/js/bootstrap.min.js"></script>
+  </body>
+</html>

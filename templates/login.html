@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>load.html</title>
+
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/layout.css">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <script type="text/javascript" src="/static/js/mymain.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrapValidator.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      body{padding-top:40px;position:relative;}
+    </style>
+  </head>
+  <body>
+   <!--public-header start -->
+
+<div class="header-nav">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container header-con">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <a class="navbar-brand" href="index.html"><img src="/static/images/logo.png" alt=""></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav nav-lt">
+         <li class="li-fir"><a href="index.html">首页</a></li>
+       <li class="li-sec"><a href="Sezaiquan.html">债权大厅</a></li>
+         <li class="dropdown li-thr">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">服务<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenuDivider">
+            <li><a href="#">风控系统</a></li>
+            <li role="presentation" class="divider"></li>
+            <li ><a href="#">数据修复</a></li>
+            <li role="presentation" class="divider"></li>
+            <li><a href="#">资产评估</a></li>
+          </ul>
+        </li>
+        <ul class="nav navbar-nav visible-sm visible-md" id="mid-style">
+       <!-- <li class="fri-child" style="width:100px;text-align:center;padding:0px;margin:0px;margin-top:16px;margin-left:38px;"><a href="zcweihu.html" style="background-color:#ec1b20;border-radius:2px;color:#fff;padding:0px;margin:0px;">发布资产</a></li> -->
+       <li><a href="load.html"><img src="/static/images/load.png" alt="">登录</a></li>
+        <li><a href="register.html"><img src="/static/images/register.png" alt="">注册</a></li>
+      </ul>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+       <!-- <li><a href="zcweihu.html">发布资产</a></li> -->
+       <li><a href="load.html"><img src="/static/images/load.png" alt="">登录</a></li>
+        <li><a href="register.html"><img src="/static/images/register.png" alt="">注册</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+   <!--public-header end -->
+
+        <div class="load-bg">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-1"></div>
+          <div class="col-md-10">       
+           <div class="load">
+             <div class="row">
+               <div class="col-md-7 bord">
+                 <img src="/static/images/loading.png" alt="">
+                 <img src="/static/images/load-text.png" alt="">
+                <!--  <div></div> -->
+                 <img src="/static/images/edit.png" alt="">
+                 <div class="loadtext">欢迎使用康得金控不良资产信息平台，请在右边输入用户名和密码进入平台。如账号登录遇到问题，请联系管理人员。</div>
+
+
+               </div>
+               <div class="col-md-5">
+            <form id="loginForm"  class="form-horizontal">
+              <div class="row">
+                 <div class="load-fir_text">
+                   <span><a href="#">账号密码登录</a></span>
+                    <span><a href="register.html">注册新用户</a></span>
+            
+                   </div>
+                 <div class="aa"></div>
+                  </div>  
+
+               <div class="row dl">
+                <div class="col-lg-12">
+                    <p style="color:red;display:none;" id="infos"></p>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"><img src="/static/images/load-load.png" alt=""></button>
+                    </span>
+                    <input type="text" class="form-control" id="userName" name="userName" placeholder="用户名">
+                  </div>
+                </div>
+              </div>
+              <div class="row dl">
+              <div class="col-lg-12">
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"><img src="/static/images/load-pass.png" alt=""></button>
+                    </span>
+                    <input type="password" class="form-control" id="passWord" name="passWord" placeholder="密码">
+                  </div>
+                </div>
+                </div>
+
+         <div class="row dl">
+         <div class="col-md-12">
+            <div class="checks-che">
+              <span>
+                <input type="checkbox" checked name="checkBox"> 下次自动登录
+              </span> <span>忘记密码？</span>
+            </div>
+            </div>
+           
+           </div>
+          <div class="row">
+          <div class="col-md-12">
+               <div class="load-btn">
+            <a><button type="button" class="btn btn-warning" id="login">立即登录</button></a>
+          </div>
+          </div>
+          </div>
+
+         
+          <div class="row load-share">
+           <div class="col-md-12">
+              <div class="share-text">社区账号登录</div>
+                <div class="imgs"><img src="/static/images/wchart.png" alt="">
+                 <img src="/static/images/blog.png" alt="">
+                  <img src="/static/images/QQ.png" alt=""></div>
+              </div>
+            </div>
+
+
+
+               </div>
+             </div>
+
+           </form>
+
+           </div>
+
+
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        </div>
+
+</div>
+
+<script type="text/javascript">
+　$(document).ready(function() {
+
+    $("#login").bind("click", function () {
+       var userName=$('#userName').val();
+       var passWord=$('#passWord').val();
+       $.ajax({
+         type: 'post',
+         url: 'login',
+         data:{
+             userName:userName,
+             passWord:passWord
+         },
+         success:function(response){
+
+          if(response.code=='0'){
+              $('#infos').show();
+            var megs = response.message;
+            $('#infos').html(megs);
+          }else{
+              localStorage.setItem('username',response.message)
+              window.location.href='index.html?'+ response.message
+          }
+           }
+        })
+      });
+
+    $('#loginForm').bootstrapValidator({
+        // message: 'This value is not valid',
+        // feedbackIcons: {
+        //     valid: 'glyphicon glyphicon-ok',
+        //     invalid: 'glyphicon glyphicon-remove',
+        //     validating: 'glyphicon glyphicon-refresh'
+        // },
+        fields: {
+            userName: {
+                message: '* 不是有效的有户名',
+                validators: {
+                    notEmpty: {
+                        message: '* 有户名不能为空'
+                    },
+                }
+            },
+             passWord: {
+                validators: {
+                    notEmpty: {
+                        message: '* 密码不能为空'
+                    },
+
+                }
+            },
+        }
+    });
+});
+</script>
+
+
+<!--footer-->
+<div class="footer">
+  <div class="footer-content container">
+    <div class="row">
+     <div class="col-sm-3 col-md-3 ft-left">
+        <div class="row">
+        <div class="col-sm-1 col-md-1"></div>
+          <div class="col-sm-4 col-md-4">
+            <ul>
+            <li>寻找</li>
+            <!-- <li>资产</li> -->
+            <li>债权</li>
+            <!-- <li>股权</li> -->
+            </ul>
+          </div>
+          <div class="col-sm-5 col-md-5 last-col">
+           <ul>
+            <li>服务</li>
+            <li>风控系统</li>
+            <li>数据修复</li>
+            <li>资产评估</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-6 col-md-6 foot-img">
+        <p>处置机构</p>
+        <div class="row">
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+          <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+        <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+          <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+        <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer01.png" alt="">
+        </div>
+         <div class="col-sm-1 col-md-2 footer-logo">
+        <img src="/static/images/footer02.png" alt="">
+        </div>
+      </div>
+    </div>
+      <div class="col-md-3 foots">
+      <div class="row">
+      <div class="col-sm-2 col-md-2"></div>
+      <div class="col-sm-10 col-md-10 fot9">
+        <p>客户服务</p>
+        <p>电话：400-123-4567</p>
+         <p>邮箱：kangdeasstes@126.com</p>
+          <p>QQ：783663368</p>
+      </div>
+      </div>
+      </div>
+</div>
+
+  </div>
+</div>
+ <div class="footer-bar">copyright&copy;康得金控|京ICP备12345678号</div>
+
+
